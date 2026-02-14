@@ -1,0 +1,209 @@
+/*Header*/
+#margin-msg {
+    margin-top: 350px;
+}
+
+.btn-header {
+    background-color: transparent;
+    color: var(--white);
+    border: 5px solid var(--white);
+    border-radius: 2px;
+    width: 330PX;
+}
+
+.btn-header:hover {
+    color: var(--orange);
+    border: 5px solid var(--orange);
+}
+
+/*Nav*/
+.slide {
+    width: 350px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide.active {
+    transform: translateX(0);
+}
+
+.slide ul {
+    font-size: 25px;
+}
+
+.slide ul li {
+    list-style: none;
+}
+
+.slide ul li a {
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.5s ease-in-out;
+}
+
+.slide ul li a:hover {
+    color: var(--green);
+}
+
+/*Sessão Info*/
+.info {
+    width: 100%;
+    height: auto;
+}
+
+.conteudo-doacao,
+.conteudo-coleta {
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.foto-doacao,
+.foto-coleta {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.info img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*Sessão Sugestões*/
+.sugestao {
+    overflow-x: hidden;
+}
+
+.card-sugestao {
+    width: 350px;
+    height: 550px;
+    background-color: var(--gray);
+}
+
+.card-foto {
+    width: 100%;
+    height: 220px;
+}
+
+.card-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-card {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-card {
+    background-color: var(--btn-cards);
+}
+
+/*Modais*/
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg-modal {
+    width: 60%;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+#modalCadastro,
+#modalCausa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* fundo escuro translúcido */
+}
+
+.texto-modal {
+    width: 35%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/*Tablet*/
+@media (max-width: 992px) {
+
+    /*Sessão Info*/
+    .info {
+        height: auto;
+    }
+
+    .bloco-doacao,
+    .bloco-coleta {
+        width: 90%;
+    }
+
+    .conteudo-doacao,
+    .conteudo-coleta {
+        width: 100%;
+    }
+
+    .foto-doacao,
+    .foto-coleta {
+        width: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /*Modais*/
+    .texto-modal {
+        display: none !important;
+    }
+
+    .bg-modal {
+        width: 80%;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 500px) {
+
+    /*Header*/
+    .btn-header {
+        width: 230px;
+    }
+
+    /*Sessão Info*/
+    .foto-doacao,
+    .foto-coleta {
+        width: 100%;
+        height: 350px;
+        display: flex;
+    }
+
+    .info img {
+        text-align: center;
+        width: 330px;
+        height: 330px;
+    }
+
+    /*Sessão sugestão*/
+    .card-sugestao {
+        width: 330px;
+    }
+}
