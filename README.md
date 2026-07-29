@@ -33,7 +33,7 @@ Siga os passos abaixo para rodar o projeto localmente:
    - Clique em **Code → Download ZIP** e extraia a pasta, ou
    - Clone o repositório com Git:
      ```bash
-     git clone https://github.com/wAngeloow/corrente-do-bem.git
+     git clone https://github.com/angelodonada/corrente-do-bem.git
      ```
 
 2. Abra o projeto no VS Code (ou outro editor de sua preferência).
@@ -57,7 +57,7 @@ Siga os passos abaixo para rodar o projeto localmente:
 <br>
 
 <div align="center">
-  <a href="https://wangeloow.github.io/corrente-do-bem/">
+  <a href="https://angelodonada.github.io/corrente-do-bem/">
     <button>Deploy</button>
   </a>
 </div>
